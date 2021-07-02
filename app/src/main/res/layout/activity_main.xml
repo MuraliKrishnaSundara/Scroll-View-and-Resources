@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvImage"
+            style="@style/customTextView"
+            android:layout_marginTop="@dimen/dp_80"
+            app:drawableLeftCompat="@drawable/person_with_tie" />
+
+        <TextView
+            android:id="@+id/tvNewEmployee"
+            style="@style/customTextView"
+            android:layout_below="@id/tvImage"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/add_new_employee_text"
+            android:textSize="@dimen/sp_30"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTittle"
+            style="@style/customTextView2"
+            android:layout_below="@id/tvNewEmployee"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="@string/tittle_text_hint" />
+
+        <TextView
+            android:id="@+id/tvFirstName"
+            style="@style/customTextView2"
+            android:layout_below="@id/tvTittle"
+            android:text="@string/first_name_text_hint" />
+
+        <TextView
+            android:id="@+id/tvSecondName"
+            style="@style/customTextView2"
+            android:layout_below="@id/tvFirstName"
+            android:text="@string/second_name_text_hint" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/customTextView2"
+            android:layout_below="@id/tvSecondName"
+            android:text="@string/work_email_hint_text" />
+
+
+        <EditText
+            android:id="@+id/etTittle"
+            style="@style/customEditText"
+            android:layout_below="@id/tvNewEmployee"
+            android:layout_marginTop="@dimen/dp_40"
+            android:hint="@string/android_developer_et" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            style="@style/customEditText"
+            android:layout_below="@id/etTittle"
+            android:hint="@string/jonathan_et" />
+
+        <EditText
+            android:id="@+id/etSecondName"
+            style="@style/customEditText"
+            android:layout_below="@id/etFirstName"
+            android:hint="@string/doe_et" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/customEditText"
+            android:layout_below="@id/etSecondName"
+            android:hint="@string/jonathan_doe_gmail_com_et" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail"
+            android:layout_marginLeft="@dimen/dp_130"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/this_is_also_used_for_login_text"
+            android:textColorHint="#808080" />
+
+    </RelativeLayout>
+
+</ScrollView>

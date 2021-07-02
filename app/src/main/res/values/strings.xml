@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ScrollView2</string>
+    <string name="add_new_employee_text">Add New Employee</string>
+    <string name="tittle_text_hint">Tittle:</string>
+    <string name="first_name_text_hint">First Name:</string>
+    <string name="second_name_text_hint">Second Name:</string>
+    <string name="android_developer_et">Android Developer</string>
+    <string name="jonathan_et">Jonathan</string>
+    <string name="doe_et">Doe</string>
+    <string name="jonathan_doe_gmail_com_et">jonathan.doe@gmail.com</string>
+    <string name="this_is_also_used_for_login_text">(This is also used for login)</string>
+    <string name="work_email_hint_text">Work Email:</string>
+</resources>
