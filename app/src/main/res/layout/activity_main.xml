@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Schedule Meeting"
+        android:textColor="#C4C4CC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="#C4C4CC"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter Name"
+        android:text="Nrupul Dev"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_1"
+        android:padding="10dp"
+        android:text="Tue - 22 December 2020"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/tvDate"
+        android:background="@drawable/bg_1"
+        android:padding="10dp"
+        android:text="11:30am"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="People to invite"
+        android:textColor="#C4C4C4"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInvite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:drawableRight="@drawable/search"
+        android:hint="Enter Name"
+        android:text="Prateek"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivImage1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etName2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/prateek_sukla" />
+
+    <ImageView
+        android:id="@+id/ivImage2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/etName2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/ivImage1"
+        android:src="@drawable/jeff_bezos" />
+
+    <View
+        android:id="@+id/vBG1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/ivImage1"
+        android:layout_marginTop="35dp"
+        android:background="#FAFAFA" />
+
+    <TextView
+        android:id="@+id/tvInviteName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vBG1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        android:drawableLeft="@drawable/prateek_sukla_small"
+        android:drawableRight="@drawable/blue_check"
+        android:drawablePadding="5dp"
+        android:text="Prateek Shukla"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvInviteName1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="#C4C4C4" />
+
+    <TextView
+        android:id="@+id/tvInviteName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInviteName1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/jeff_bezos_small"
+        android:drawablePadding="5dp"
+        android:text="Jeff bezos"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:drawableRight="@drawable/slack_icon"
+        android:drawablePadding="10dp"
+        android:text="Notify people on Slack ?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="40dp"
+        android:background="#8095FF"
+        android:text="Create Meeting" />
+
+</RelativeLayout>
