@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/vBlue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:background="#0583EA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:drawableLeft="@drawable/back"
+        android:drawablePadding="@dimen/dimen_40"
+        android:gravity="center"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_17_sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        style="@style/customEditText1"
+        android:layout_below="@id/vBlue"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:hint="@string/alma_lawson_example_com" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        style="@style/customEditText1"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="@dimen/dimen_45"
+        android:hint="@string/jane_cooper" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/customEditText1"
+        android:layout_below="@id/etUserName"
+        android:layout_marginTop="@dimen/dimen_45"
+        android:hint="@string/password_minimum_6_characters" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="@string/use_phone_number"
+        android:textAllCaps="true"
+        android:textColor="#0583EA"
+        android:textSize="@dimen/dimen_13_sp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/customEditText2"
+        android:layout_below="@id/tvPhone"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@drawable/bg_ocean_blue"
+        android:text="@string/sign_up"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignUp"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:text="@string/or"
+        android:textColor="#000000"
+        android:textSize="@dimen/dimen_13_sp" />
+
+    <Button
+        android:id="@+id/btnFacebook"
+        style="@style/customEditText2"
+        android:layout_below="@id/tvOr"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_dark_blue"
+        android:text="@string/continue_with_facebook"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        style="@style/customEditText2"
+        android:layout_below="@id/btnFacebook"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/bg_white"
+        android:text="@string/continue_with_google" />
+
+</RelativeLayout>
