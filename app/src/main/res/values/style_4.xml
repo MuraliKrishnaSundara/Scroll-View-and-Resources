@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="customEditText4">
+
+        <item name="android:layout_width">@dimen/dimen_40</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+
+    </style>
+</resources>

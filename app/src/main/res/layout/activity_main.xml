@@ -12,152 +12,114 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Schedule Meeting"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:text="@string/schedule_meeting"
         android:textColor="#C4C4CC"
-        android:textSize="20sp" />
+        android:textSize="@dimen/dimen_20" />
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:text="Name"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/name"
         android:textColor="#C4C4CC"
-        android:textSize="14sp" />
+        android:textSize="@dimen/dimen_14_sp" />
 
     <EditText
         android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/customEditText2"
         android:layout_below="@id/tvName"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:hint="Enter Name"
-        android:text="Nrupul Dev"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:layout_marginTop="@dimen/dimen_10"
+        android:hint="@string/enter_name"
+        android:text="@string/nrupul_dev" />
 
     <TextView
         android:id="@+id/tvDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/customEditText3"
         android:layout_below="@id/etName"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="45dp"
-        android:background="@drawable/bg_1"
-        android:padding="10dp"
-        android:text="Tue - 22 December 2020"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:text="@string/tue_22_december_2020" />
 
     <TextView
         android:id="@+id/tvTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/customEditText3"
         android:layout_below="@id/etName"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginLeft="@dimen/dimen_65"
         android:layout_toRightOf="@id/tvDate"
-        android:background="@drawable/bg_1"
-        android:padding="10dp"
-        android:text="11:30am"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:text="@string/_11_30am" />
 
     <TextView
         android:id="@+id/tvInvite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvDate"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
-        android:text="People to invite"
+        android:layout_marginLeft="@dimen/dimen"
+        android:layout_marginTop="@dimen/dimen_35"
+        android:text="@string/people_to_invite"
         android:textColor="#C4C4C4"
-        android:textSize="14sp"
+        android:textSize="@dimen/dimen_14_sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etName2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/customEditText2"
         android:layout_below="@id/tvInvite"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dimen_5"
         android:drawableRight="@drawable/search"
-        android:hint="Enter Name"
-        android:text="Prateek"
-        android:textColor="#000000"
-        android:textSize="14sp" />
+        android:hint="@string/enter_name"
+        android:text="@string/prateek" />
 
     <ImageView
         android:id="@+id/ivImage1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        style="@style/customEditText4"
         android:layout_below="@id/etName2"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/dimen_25"
         android:src="@drawable/prateek_sukla" />
 
     <ImageView
         android:id="@+id/ivImage2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        style="@style/customEditText4"
         android:layout_below="@id/etName2"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/dimen_10"
         android:layout_toRightOf="@id/ivImage1"
         android:src="@drawable/jeff_bezos" />
 
     <View
         android:id="@+id/vBG1"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="@dimen/dimen_130"
         android:layout_below="@id/ivImage1"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="@dimen/dimen_35"
         android:background="#FAFAFA" />
 
     <TextView
         android:id="@+id/tvInviteName1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/customEditText1"
         android:layout_alignTop="@id/vBG1"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="@dimen/dimen_35"
         android:drawableLeft="@drawable/prateek_sukla_small"
         android:drawableRight="@drawable/blue_check"
-        android:drawablePadding="5dp"
-        android:text="Prateek Shukla"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:textStyle="bold" />
+        android:text="@string/prateek_shukla" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_below="@id/tvInviteName1"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_40"
         android:background="#C4C4C4" />
 
     <TextView
         android:id="@+id/tvInviteName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/customEditText1"
         android:layout_below="@id/tvInviteName1"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/dimen_30"
         android:drawableLeft="@drawable/jeff_bezos_small"
-        android:drawablePadding="5dp"
-        android:text="Jeff bezos"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:textStyle="bold" />
+        android:text="@string/jeff_bezos" />
 
     <TextView
         android:id="@+id/tvNotify"
@@ -165,12 +127,12 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/btnCreate"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="@dimen/dimen_25"
         android:drawableRight="@drawable/slack_icon"
-        android:drawablePadding="10dp"
-        android:text="Notify people on Slack ?"
+        android:drawablePadding="@dimen/dimen_10"
+        android:text="@string/notify_people_on_slack"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="@dimen/dimen_14_sp"
         android:textStyle="italic" />
 
     <Button
@@ -179,10 +141,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="55dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="@dimen/dimen_55"
+        android:layout_marginRight="@dimen/dimen_55"
+        android:layout_marginBottom="@dimen/dimen_40"
         android:background="#8095FF"
-        android:text="Create Meeting" />
+        android:text="@string/create_meeting" />
 
 </RelativeLayout>
