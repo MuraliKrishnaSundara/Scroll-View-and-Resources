@@ -1,0 +1,2 @@
+rootProject.name = "TopicsOfInterestLayout"
+include ':app'

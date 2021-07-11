@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/vBlueView1"
+        style="@style/customEditText3"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/vBlueView2"
+        style="@style/customEditText3"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/tvWhatTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:drawableLeft="@drawable/back"
+        android:drawablePadding="@dimen/dimen_30"
+        android:text="@string/what_topic_do_you_love"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/dimen_23_sp" />
+
+    <TextView
+        android:id="@+id/tvBooks"
+        style="@style/customEditText2"
+        android:layout_below="@id/vBlueView1"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_65"
+        android:text="@string/books" />
+
+    <TextView
+        android:id="@+id/tvPodcasts"
+        style="@style/customEditText1"
+        android:layout_below="@id/vBlueView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_65"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:text="@string/podcasts" />
+
+    <TextView
+        android:id="@+id/tvNews"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvBooks"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:text="@string/news" />
+
+    <TextView
+        android:id="@+id/tvBusiness"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvBooks"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:text="@string/business" />
+
+    <TextView
+        android:id="@+id/tvEntertainment"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvNews"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:text="@string/entertainment" />
+
+    <TextView
+        android:id="@+id/tvSports"
+        style="@style/customEditText2"
+        android:layout_below="@id/tvNews"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:text="@string/sports" />
+
+    <TextView
+        android:id="@+id/tvTechnology"
+        style="@style/customEditText2"
+        android:layout_below="@id/tvEntertainment"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:text="@string/technology" />
+
+    <TextView
+        android:id="@+id/tvPronunciation"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvEntertainment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:text="@string/pronunciation" />
+
+    <TextView
+        android:id="@+id/tvGrammer"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvTechnology"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:text="@string/grammar" />
+
+    <TextView
+        android:id="@+id/tvHealth"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvTechnology"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:text="@string/health" />
+
+    <Button
+        android:layout_width="@dimen/dimen_210"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:background="@drawable/bg_1"
+        android:text="@string/continue_btn"
+        android:textAllCaps="false"
+        android:textColor="#0583EA"
+        android:textSize="@dimen/dimen_18_sp" />
+
+</RelativeLayout>
