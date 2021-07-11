@@ -2,7 +2,6 @@
 <resources>
 
     <style name="customEditText2">
-
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
@@ -11,6 +10,5 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/dimen_16_sp</item>
-
     </style>
 </resources>
